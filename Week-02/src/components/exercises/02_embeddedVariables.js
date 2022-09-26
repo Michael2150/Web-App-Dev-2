@@ -3,8 +3,17 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css";
 
 
 const Demo = () => {
+  const langs = ["Go", "Julia", "Kotlin"]
+    
   return (
-      <h1>TODO</h1>
+    <div>
+      <h1>Modern Languages</h1>
+      <ul>
+        {langs.map((lang, index) => (
+          <li key={index}>{lang}</li>
+        ))}
+      </ul>
+    </div>
   );
 };
 
